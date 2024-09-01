@@ -5,7 +5,7 @@ public class GradeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ask the user for the number of subjects
+        
         System.out.print("Enter the number of subjects: ");
         int numSubjects = scanner.nextInt();
 
