@@ -21,7 +21,7 @@ public class GuessNumberGame {
 
             System.out.println("Round " + rounds + ": Guess a number between 1 and 100.");
 
-            while (!hasGuessedCorrectly && attempts < 10) {  // Limit to 10 attempts
+            while (!hasGuessedCorrectly && attempts < 10) {  
                 System.out.print("Enter your guess: ");
                 int userGuess = scanner.nextInt();
                 attempts++;
@@ -29,7 +29,7 @@ public class GuessNumberGame {
                 if (userGuess == numberToGuess) {
                     hasGuessedCorrectly = true;
                     System.out.println("Correct! You guessed the number in " + attempts + " attempts.");
-                    totalScore += (10 - attempts + 1); // Score based on attempts
+                    totalScore += (10 - attempts + 1); 
                 } else if (userGuess > numberToGuess) {
                     System.out.println("Too high! Try again.");
                 } else {
